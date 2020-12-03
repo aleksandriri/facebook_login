@@ -20,8 +20,6 @@ class Facebook extends Component {
         });
     }
 
-    componentClicked = () => console.log('click')
-
     render() {
         let fbContent;
 
@@ -43,7 +41,6 @@ class Facebook extends Component {
                 appId="202715531393592"
                 autoLoad={true}
                 fields="name,email,picture"
-                onClick={this.componentClicked}
                 callback={this.responseFacebook}
             />);
         }
